@@ -602,7 +602,7 @@ const Positions: React.FC = () => {
                   <Check className="text-crypto-green h-5 w-5 mt-0.5 mr-3 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-white mb-1">Leverage Management</h3>
-                    <p className="text-gray-400 text-sm">Use lower leverage (1-5x) for longer-term positions. Higher leverage (>10x) should only be used by experienced traders for short-term positions.</p>
+                    <p className="text-gray-400 text-sm">Use lower leverage (1-5x) for longer-term positions. Higher leverage (&gt;10x) should only be used by experienced traders for short-term positions.</p>
                   </div>
                 </div>
                 
