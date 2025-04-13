@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,7 +8,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import InvestmentHome from "./pages/Investment/InvestmentHome";
+import MutualFunds from "./pages/Investment/MutualFunds";
+import Dashboard from "./pages/Investment/Dashboard";
+import IcoIdo from "./pages/Investment/IcoIdo";
+import News from "./pages/Investment/News";
 import TradingHome from "./pages/Trading/TradingHome";
+import Futures from "./pages/Trading/Futures";
+import Positions from "./pages/Trading/Positions";
+import Orders from "./pages/Trading/Orders";
+import Watchlist from "./pages/Trading/Watchlist";
 import ProfilePage from "./pages/Profile/ProfilePage";
 import ProfileHome from "./pages/Profile/ProfileHome";
 import NotFound from "./pages/NotFound";
@@ -26,17 +35,17 @@ const App = () => (
             
             {/* Investment Routes */}
             <Route path="investment" element={<InvestmentHome />} />
-            <Route path="investment/mutual-funds" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Mutual Funds Page</div></div>} />
-            <Route path="investment/dashboard" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Investment Dashboard Page</div></div>} />
-            <Route path="investment/ico-ido" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">ICO/IDO Page</div></div>} />
-            <Route path="investment/news" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">News Page</div></div>} />
+            <Route path="investment/mutual-funds" element={<MutualFunds />} />
+            <Route path="investment/dashboard" element={<Dashboard />} />
+            <Route path="investment/ico-ido" element={<IcoIdo />} />
+            <Route path="investment/news" element={<News />} />
             
             {/* Trading Routes */}
             <Route path="trading" element={<TradingHome />} />
-            <Route path="trading/futures" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Futures & Options Page</div></div>} />
-            <Route path="trading/positions" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Positions Page</div></div>} />
-            <Route path="trading/orders" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Orders Page</div></div>} />
-            <Route path="trading/watchlist" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Watchlist Page</div></div>} />
+            <Route path="trading/futures" element={<Futures />} />
+            <Route path="trading/positions" element={<Positions />} />
+            <Route path="trading/orders" element={<Orders />} />
+            <Route path="trading/watchlist" element={<Watchlist />} />
             
             {/* Profile Routes */}
             <Route path="profile" element={<ProfilePage />}>
