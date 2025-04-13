@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -23,51 +22,53 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            
-            {/* Investment Routes */}
-            <Route path="investment" element={<InvestmentHome />} />
-            <Route path="investment/mutual-funds" element={<MutualFunds />} />
-            <Route path="investment/dashboard" element={<Dashboard />} />
-            <Route path="investment/ico-ido" element={<IcoIdo />} />
-            <Route path="investment/news" element={<News />} />
-            
-            {/* Trading Routes */}
-            <Route path="trading" element={<TradingHome />} />
-            <Route path="trading/futures" element={<Futures />} />
-            <Route path="trading/positions" element={<Positions />} />
-            <Route path="trading/orders" element={<Orders />} />
-            <Route path="trading/watchlist" element={<Watchlist />} />
-            
-            {/* Profile Routes */}
-            <Route path="profile" element={<ProfilePage />}>
-              <Route index element={<ProfileHome />} />
-              <Route path="add-money" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Add Money</h2></div>} />
-              <Route path="orders" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Orders</h2></div>} />
-              <Route path="bank-details" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Bank Details</h2></div>} />
-              <Route path="refer" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Refer & Earn</h2></div>} />
-              <Route path="support" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Customer Support</h2></div>} />
-              <Route path="reports" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Reports</h2></div>} />
-              <Route path="settings" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Settings</h2></div>} />
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              
+              {/* Investment Routes */}
+              <Route path="investment" element={<InvestmentHome />} />
+              <Route path="investment/mutual-funds" element={<MutualFunds />} />
+              <Route path="investment/dashboard" element={<Dashboard />} />
+              <Route path="investment/ico-ido" element={<IcoIdo />} />
+              <Route path="investment/news" element={<News />} />
+              
+              {/* Trading Routes */}
+              <Route path="trading" element={<TradingHome />} />
+              <Route path="trading/futures" element={<Futures />} />
+              <Route path="trading/positions" element={<Positions />} />
+              <Route path="trading/orders" element={<Orders />} />
+              <Route path="trading/watchlist" element={<Watchlist />} />
+              
+              {/* Profile Routes */}
+              <Route path="profile" element={<ProfilePage />}>
+                <Route index element={<ProfileHome />} />
+                <Route path="add-money" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Add Money</h2></div>} />
+                <Route path="orders" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Orders</h2></div>} />
+                <Route path="bank-details" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Bank Details</h2></div>} />
+                <Route path="refer" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Refer & Earn</h2></div>} />
+                <Route path="support" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Customer Support</h2></div>} />
+                <Route path="reports" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Reports</h2></div>} />
+                <Route path="settings" element={<div className="glass-card rounded-xl p-6"><h2 className="text-2xl font-bold text-white mb-6">Settings</h2></div>} />
+              </Route>
+              
+              {/* Other Routes */}
+              <Route path="logout" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Logout Page</div></div>} />
             </Route>
             
-            {/* Other Routes */}
-            <Route path="logout" element={<div className="min-h-screen flex items-center justify-center"><div className="text-white text-xl">Logout Page</div></div>} />
-          </Route>
-          
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
