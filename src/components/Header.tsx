@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold text-gradient">GROWDHA</span>
+          <span className="text-2xl font-bold text-gradient">VALUEX</span>
         </Link>
         
         {/* Search Bar */}

@@ -136,7 +136,7 @@ const popularInvestments = [
 const topSips = [
   { 
     id: 'growdha10-sip', 
-    name: 'Growdha 10', 
+    name: 'ValueX 10', 
     returns: '28.5%',
     trend: 'up',
     averageCost: '₹1,850',

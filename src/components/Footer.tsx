@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Link to="/" className="text-2xl font-bold text-gradient">GROWDHA</Link>
+            <Link to="/" className="text-2xl font-bold text-gradient">VALUEX</Link>
             <p className="mt-4 text-gray-400 text-sm">
               Your trusted platform for crypto investments and trading. Secure, transparent, and user-friendly.
             </p>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               <li>
                 <div className="flex items-center text-gray-400">
                   <Mail size={16} className="mr-2" />
-                  <span>support@growdha.com</span>
+                  <span>support@valuex.com</span>
                 </div>
               </li>
             </ul>
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-8 pt-6 border-t border-gray-800">
           <p className="text-center text-sm text-gray-500">
-            © {new Date().getFullYear()} Growdha. All rights reserved.
+            © {new Date().getFullYear()} ValueX. All rights reserved.
           </p>
         </div>
       </div>

@@ -125,7 +125,7 @@ const Home: React.FC = () => {
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-crypto-blue/10 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose <span className="text-gradient">Growdha</span></h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">Why Choose <span className="text-gradient">ValueX</span></h2>
           
           <div className="flex flex-col gap-8">
             <div className="p-6 glass-card rounded-xl transform hover:scale-105 transition-all duration-300 hover:shadow-[0_10px_30px_-15px_rgba(155,135,245,0.4)]">

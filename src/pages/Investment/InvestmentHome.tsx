@@ -23,7 +23,7 @@ import {
 const indexFunds = [
   { 
     id: 'growdha10', 
-    name: 'Growdha 10', 
+    name: 'ValueX 10', 
     description: 'Top 10 cryptocurrencies by market cap', 
     returns: '18.5%',
     trend: 'up',

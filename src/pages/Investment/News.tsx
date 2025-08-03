@@ -425,7 +425,7 @@ const News: React.FC = () => {
                     <div className="p-3">
                       <h3 className="font-medium text-white text-sm">{video.title}</h3>
                       <div className="flex items-center justify-between text-xs text-gray-400 mt-1">
-                        <span>Growdha Crypto</span>
+                        <span>ValueX Crypto</span>
                         <span>{video.views} views</span>
                       </div>
                     </div>
